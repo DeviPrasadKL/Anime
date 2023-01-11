@@ -1,11 +1,11 @@
-import React,{useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import AnimeList from './AnimeList';
 
 export default function SearchedAnime() {
-    let {searchkey} = useParams();
+    let { searchkey } = useParams();
 
-    const [apiData, setapiData] = useState(null);
+    let [apiData, setapiData] = useState(null);
     let [pending, setpending] = useState(true);
     let [error, setError] = useState(null);
 
@@ -19,19 +19,19 @@ export default function SearchedAnime() {
             })
             .then((datas) => { setapiData(datas); setpending(false) })
             .catch((err) => { setError(err.message) })
-    }, [apiData]);
-
+    }, [pending]);
 
     return (
         <>
             {error && <h1>{error}</h1>}
             {pending && <div className="loader"> </div>}
             {apiData && <div className="Home">
-                <AnimeList apiData={apiData.data.filter((data, index)=>
-                    {return (data.title.toUpperCase().includes(searchkey.toUpperCase()))}
-                    )} />
-            </div>
-            }
+                <AnimeList apiData={apiData.data.filter((data, index) => {
+                    return (
+                        apiData.data[index].title.toUpperCase().includes(searchkey.toUpperCase())
+                    )
+                })} />
+            </div>}
         </>
     );
 }

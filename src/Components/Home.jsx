@@ -15,7 +15,7 @@ export default function Home() {
                 }
                 return response.json()
             })
-            .then((datas) => { setapiData(datas); setpending(false) })
+            .then((datas) => { setapiData(datas.data); setpending(false) })
             .catch((err) => { setError(err.message) })
     }, []);
 

@@ -2,13 +2,13 @@
   margin: 0px;
   padding: 0px;
 }
-colors {
+/* colors {
   color: #1a1a10;
   color: #4e4e50;
   color: #6f2232;
   color: #950740;
   color: #c3073f;
-}
+} */
 a {
   text-decoration: none;
 }
@@ -88,6 +88,9 @@ a {
   background-color:rgb(23, 52, 182) ;
   color: white;
 }
+#searchHeading{
+  color: white;
+}
 
 /* Home */
 .Home {
@@ -99,6 +102,7 @@ a {
 /* AnimeList */
 .CardOuter {
   display: grid;
+  height: auto;
   grid-template-columns: 2fr 2fr 2fr 2fr 1.5fr;
   background-color: #1a1a10;
   box-sizing: border-box;

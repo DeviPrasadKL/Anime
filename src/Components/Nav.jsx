@@ -8,7 +8,7 @@ export default function Nav() {
   return (
     <div className="NavBar">
       <ul>
-        <Link to="/"><li>Home</li></Link>
+        <Link to="/Yousurya/Anime"><li>Home</li></Link>
         <li>About</li>
         <li>Contact Us</li>
       </ul>

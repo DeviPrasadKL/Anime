@@ -13,7 +13,7 @@ function App() {
         <Nav />
         <Switch>
 
-          <Route exact path="/">
+          <Route exact path="/Yousurya/Anime">
             <Home />
           </Route>
 
