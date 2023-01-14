@@ -12,7 +12,7 @@ export default function Nav() {
         <li>About</li>
         <li>Contact Us</li>
       </ul>
-      <Link to="/addanime"><button id="Addbtn">Add Movie &nbsp; +</button></Link>
+      <Link to="/addanime"><button id="Addbtn">Add Anime &nbsp; +</button></Link>
       <div className="searchContent">
         <input type="search" placeholder="🔎 Search Anime" id="search" value={search} onChange={(e)=>{setsearch(e.target.value)}} />
         <Link to={`/search${search}`}><button id="searchbtn">Search</button></Link>
