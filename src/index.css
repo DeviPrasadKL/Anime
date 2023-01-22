@@ -135,6 +135,7 @@ a {
   gap: 1rem;
   background-color: #1a1a10;
   width: 100%;
+  padding: 1rem 1rem;
 }
 .Card {
   color: rgba(255, 255, 255, 0.938);
@@ -146,12 +147,14 @@ a {
 .Card img {
   border: #6f2232 2px solid;
   box-shadow: 1px 1px 40px #950740;
+  margin-bottom: 2rem;
 }
 .Card img:hover {
-  box-shadow: 2px 2px 50px white;
+  box-shadow: 2px 2px 25px white;
   transition: 0.6s;
   border: 2px solid white;
   border-radius: 10px;
+  transform: scale(1.1);
 }
 .CardContent {
   padding: 2px 4px;
