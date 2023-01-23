@@ -22,7 +22,7 @@ export default function Home() {
     return (
         <>
             {error && <h1>{error}</h1>}
-            {pending && <div className="loader"> </div>}
+            {pending && <div className="spinner"> </div>}
             {apiData && <div className="Home">
                 <AnimeList apiData={apiData} />
             </div>}
