@@ -4,13 +4,12 @@ import { Link } from 'react-router-dom';
 export default function AnimeList({ apiData }) {
 
     return (
-
         <div className="CardOuter">
             {
                 apiData.map((data, index) => {
                     return (
                         <div className="Card">
-                            
+
                             <Link to={`/AnimeDetails${data.mal_id}`}>
                                 <img src={apiData[index].images.jpg.image_url} alt="poster" />
                             </Link>
