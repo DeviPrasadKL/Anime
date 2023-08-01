@@ -7,7 +7,7 @@ export default function Nav() {
 
   return (
     <nav className="NavBar">
-      <a href="/Anime/"><i className ="menubtn material-icons show" > menu </i></a>
+      <a href="/Anime/"><i className="menubtn material-icons show" > menu </i></a>
       <a href="/Anime/" className="logo"> Anime </a>
       <input type="checkbox" id="toggler" />
       <label htmlFor="toggler"><i className="ri-menu-line"></i></label>
